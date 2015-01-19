@@ -4,7 +4,7 @@
 
     <head>
         <title>Raspberry Pi project</title>
-        <link rel="stylesheet" type="text/css" href="/home/serine/website/2page_style.css">
+        <link rel="stylesheet" type="text/css" href="/home/serine/website/stylesheets/main.css">
 
     </head>
 
@@ -12,25 +12,31 @@
             <h1>This is a raspberry Pi project</h1>
             <nav>
                 <ul>
-                    <li><a href="this.html">Raspberry Pi</a></li>
-                    <li><a href="/home/serine/website/1page.html">Setting up</a></li>
-                    <li><a href="theOther.html">Resources</a></li>
-                    <li><a href="banana.html">Minecraft Pi</a></li>
+                    <li><a href="http://www.raspberrypi.org/products/model-b-plus">Raspberry Pi</a></li>
+                    <li><a href="/settingup">Settingup</a></li>
+                    <li><a href="/home/serine/website/templates/resources_page.html">Resources</a></li>
+                    <li><a href="/">Minecraft Pi</a></li>
                     <li><a href="banana.html">The Shell</a></li>
                 </ul>
             </nav>
+            <br>
         </header>
 
     <body>
+        <div class="mainpage">
   
-        {% block content %}
-        {% endblock %}
+            {% block content %}
+            {% endblock %}
+            <br>
+        </div>
 
         <div class="footer">
             <br>
             <footer>
                 <p>Posted by: Kirill Tsyganov</p>
-                <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+                <p>
+                 Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.
+                </p>
             </footer>
             <br>
         </div> 

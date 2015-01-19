@@ -5,6 +5,10 @@ api_version: 1
 threadsafe: true
 
 handlers:
+
+- url: /home/serine/website/stylesheets
+  static_dir: stylesheets
+
 - url: /.*
   script: templates.application
 

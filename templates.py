@@ -19,4 +19,11 @@ class MainPage(Handler):
         #items = self.request.get_all("food")
         self.render('about.html')
 
-application = webapp2.WSGIApplication([('/', MainPage),],debug=True)
+class ResourcesHandler(Handler):
+    def get(self):
+        self.render('getting_ready.html')
+
+
+application = webapp2.WSGIApplication([('/', MainPage),
+                                       ('/settingup', ResourcesHandler)],
+                                       debug=True)
