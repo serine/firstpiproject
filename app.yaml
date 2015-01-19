@@ -9,6 +9,9 @@ handlers:
 - url: /home/serine/website/stylesheets
   static_dir: stylesheets
 
+- url: /home/serine/website/images
+  static_dir: images
+
 - url: /.*
   script: templates.application
 

@@ -19,11 +19,33 @@ class MainPage(Handler):
         #items = self.request.get_all("food")
         self.render('about.html')
 
-class ResourcesHandler(Handler):
+class SettingUpHandler(Handler):
     def get(self):
-        self.render('getting_ready.html')
+        self.render('settingup.html')
+
+class Step1Handler(Handler):
+    def get(self):
+        self.render('stepone.html')
+
+class Step2Handler(Handler):
+    def get(self):
+        self.render('steptwo.html')
+
+class Step3Handler(Handler):
+    def get(self):
+        self.render('stepthree.html')
+
+class Step4Handler(Handler):
+    def get(self):
+        self.render('stepfour.html')
+
+
 
 
 application = webapp2.WSGIApplication([('/', MainPage),
-                                       ('/settingup', ResourcesHandler)],
+                                       ('/settingup', SettingUpHandler),
+                                       ('/settingup/stepone', Step1Handler),
+                                       ('/settingup/steptwo', Step2Handler),
+                                       ('/settingup/stepthree', Step3Handler),
+                                       ('/settingup/stepfour', Step4Handler)],
                                        debug=True)

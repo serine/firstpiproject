@@ -3,7 +3,8 @@ header {
     margin-bottom: 10px;
     margin-left: 150;
     margin-right: 175;
-    background-color: #E9967A;
+    background-color: #3D3D29;
+    color: white;
 }
 
 h1 {
@@ -27,9 +28,9 @@ nav li {
     display: inline;
     border-width: 1px 1px 0 1px;
     margin: 0 -10px 0 0;
-    border: 2px solid #a1a1a1;
+    border: 2px solid #3d3d29;
     padding: 15px 20px; 
-    background: #008000;
+    background: #00cc99;
     /*width: 300px;*/
 }
 
@@ -40,18 +41,20 @@ nav li a {
     font-family: Calibri, sans-serif;
     color: white;
     font-size: 19px;
+    font-weight: 500;
 }
 
 div.footer {
      display: block;
-     margin-top: -20px;
+     margin-top: 1em;
      margin-bottom: 1em;
      margin-left: 150;
      margin-right: 175;
-     background-color: #483D8B;
+     background-color: #3d3d29;
      font-family: Calibri, sans-serif;
      color: white
   }
+
 
 /*div {
      display: block;
@@ -64,11 +67,12 @@ div.footer {
 */
 div.mainpage {
               display: block;
-              margin-top: -20px;
+              margin-top: 1em;
               margin-bottom: 1em;
               margin-left: 150;
               margin-right: 175;
-              background-color: #8FBC8F;
+              /*background-color: #8FBC8F;*/
+              background-color: #ebfff5;
   }
 
 
@@ -100,3 +104,20 @@ ul {
 body {
       background-color: white;
   }
+
+img {
+     margin-top: 1em;
+     margin-bottom: 1em;
+     margin-left: 150;
+     margin-right 150;
+     width: 700px;
+     height: 500px;
+}
+
+ol.settingup {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 150;
+    margin-right: 150;
+}
