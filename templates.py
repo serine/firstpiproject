@@ -17,12 +17,22 @@ class Handler(webapp2.RequestHandler):
 class MainPage(Handler):
     def get(self):
         #items = self.request.get_all("food")
-        self.render('about.html')
+        self.render('home.html')
+   
+    def post(self):
+        self.redirect('/raspberrypi')
+
+class RaspberryPiHandler(Handler):
+    def get(self):
+        self.render('raspberrypi.html')
+
+    def post(self):
+        self.redirect('/gettingstarted')
 
 class SettingUpHandler(Handler):
     def get(self):
-        self.render('settingup.html')
-
+        self.render('gettingstarted.html')
+   
 class Step1Handler(Handler):
     def get(self):
         self.render('stepone.html')
@@ -40,12 +50,11 @@ class Step4Handler(Handler):
         self.render('stepfour.html')
 
 
-
-
 application = webapp2.WSGIApplication([('/', MainPage),
-                                       ('/settingup', SettingUpHandler),
-                                       ('/settingup/stepone', Step1Handler),
-                                       ('/settingup/steptwo', Step2Handler),
-                                       ('/settingup/stepthree', Step3Handler),
-                                       ('/settingup/stepfour', Step4Handler)],
+                                       ('/gettingstarted', SettingUpHandler),
+                                       ('/gettingstarted/stepone', Step1Handler),
+                                       ('/gettingstarted/steptwo', Step2Handler),
+                                       ('/gettingstarted/stepthree', Step3Handler),
+                                       ('/gettingstarted/stepfour', Step4Handler),
+                                       ('/raspberrypi', RaspberryPiHandler)],
                                        debug=True)

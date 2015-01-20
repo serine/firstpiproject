@@ -1,3 +1,17 @@
+button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 150;
+    margin-right: 175;
+    background: #ff9980;
+    color: black;
+    padding: 20px 55px;
+    font-family: Calibri, sans-serif;
+    font-size: 19px;
+    border-radius: 50px;
+
+}
+
 header {
     margin-top: -35px;
     margin-bottom: 10px;
@@ -90,6 +104,14 @@ h4 {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 20;
+    margin-right: 0;
+}
+
+h2 {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 50;
     margin-right: 0;
 }
 
