@@ -27,19 +27,41 @@ class RaspberryPiHandler(Handler):
         self.render('raspberrypi.html')
 
     def post(self):
-        self.redirect('/gettingstarted')
+        item = self.request.get("item")
+        if item == "back2home":
+            self.redirect("/")
+        elif item == "gettingstarted":
+            self.redirect('/gettingstarted')
 
-class SettingUpHandler(Handler):
+class GettingStartedHandler(Handler):
     def get(self):
         self.render('gettingstarted.html')
-   
-class Step1Handler(Handler):
-    def get(self):
-        self.render('stepone.html')
+  
+    def post(self):
+        #self.response.headers['Content-Type'] = 'text/plain'
+        item = self.request.get("item")
+        if item == "one":
+            self.redirect('/gettingstarted/parts')
+        elif item == "two":
+            self.redirect('/learninglinux')
 
-class Step2Handler(Handler):
+class PartsHandler(Handler):
     def get(self):
-        self.render('steptwo.html')
+        self.render('parts.html')
+  
+    def post(self):
+        
+        item  = self.request.get("item")
+        if item == "back2gettingstarted":
+            self.redirect("/gettingstarted")
+
+class LearningLinuxHandler(Handler):
+    def get(self):
+        self.render('learninglinux.html')
+
+class AssemblingPiHandler(Handler):
+    def get(self):
+        self.render('assemblingpi.html')
 
 class Step3Handler(Handler):
     def get(self):
@@ -51,10 +73,10 @@ class Step4Handler(Handler):
 
 
 application = webapp2.WSGIApplication([('/', MainPage),
-                                       ('/gettingstarted', SettingUpHandler),
-                                       ('/gettingstarted/stepone', Step1Handler),
-                                       ('/gettingstarted/steptwo', Step2Handler),
-                                       ('/gettingstarted/stepthree', Step3Handler),
+                                       ('/gettingstarted', GettingStartedHandler),
+                                       ('/gettingstarted/parts', PartsHandler),
+                                       ('/learninglinux', LearningLinuxHandler),
+                                       ('/gettingstarted/assemblingpi', AssemblingPiHandler),
                                        ('/gettingstarted/stepfour', Step4Handler),
                                        ('/raspberrypi', RaspberryPiHandler)],
                                        debug=True)

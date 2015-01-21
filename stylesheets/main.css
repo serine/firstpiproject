@@ -1,11 +1,13 @@
 button {
+    display: inline;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 150;
-    margin-right: 175;
+    /*margin-left: 4em;
+    margin-right: 2em;*/
+    margin: 1em -7em 0 7em;
     background: #ff9980;
     color: black;
-    padding: 20px 55px;
+    padding: 3px 7px;
     font-family: Calibri, sans-serif;
     font-size: 19px;
     border-radius: 50px;
@@ -29,15 +31,14 @@ h1 {
     margin-right: 150;
 }
 
-/*nav ul {
+nav ul {
     list-style: none;
-    padding: 0;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 150;
-    margin-right: 150;
+    margin-left: 1em;
+    margin-right: 1em;
 }
-*/
+
 nav li {
     display: inline;
     border-width: 1px 1px 0 1px;
@@ -107,7 +108,7 @@ h4 {
     margin-right: 0;
 }
 
-h2 {
+h3 {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -130,16 +131,26 @@ body {
 img {
      margin-top: 1em;
      margin-bottom: 1em;
-     margin-left: 150;
-     margin-right 150;
+     margin-left: 5em;
+     margin-right 5em;
      width: 700px;
      height: 500px;
 }
 
-ol.settingup {
+h5 {
+     margin-top: -1em;
+     margin-bottom: 1em;
+     margin-left: 6em;
+     margin-right 5em;
+     width: 700px;
+     height: 500px;
+}
+
+ol {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 150;
-    margin-right: 150;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 2em;
 }

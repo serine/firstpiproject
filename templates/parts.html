@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>List of items that you will need for your Raspberry Pi set up</h3>
+<ul>
+    <li>1 x HDMI cable</li>
+    <li>1 x USB cable</li>
+    <li>1 x USB charger 5V DC and 1500-2000mA
+    (you might want ask your dad about this)</li>
+    <li>1 x micro SD card class 10, minimum 8G</li>
+</ul>
+
+<p>
+ Once you have checked that you have all the components you go ahead and start
+<a href="/gettingstarted/assemblingpi">assembling your Raspberry Pi case</a> and
+<a href="/gettingstarted/stepthree">connecting all pirepheries</a>.
+
+<form method="post">
+    <button name="item" value="back2gettingstarted">Back</button>
+    <button name="item" value="two">Booting up your Raspberry Pi</button>
+</form>
+{% endblock %}
