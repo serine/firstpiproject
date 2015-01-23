@@ -63,10 +63,22 @@ class AssemblingPiHandler(Handler):
     def get(self):
         self.render('assemblingpi.html')
 
-class Step3Handler(Handler):
-    def get(self):
-        self.render('stepthree.html')
+    def post(self):
+        item = self.request.get("item")
+        if item == "back2parts":
+            self.redirect("/gettingstarted/parts")
+        elif item == "checkpirepheries":
+            self.redirect("/gettingstarted/pirepheries")
 
+class PirepheriesHandler(Handler):
+    def get(self):
+        self.render('pirepheries.html')
+   
+    def post(self):
+        item = self.request.get("item")
+        if item == "back2parts":
+            self.redirect("/gettingstarted/parts")
+          
 class Step4Handler(Handler):
     def get(self):
         self.render('stepfour.html')
@@ -77,6 +89,6 @@ application = webapp2.WSGIApplication([('/', MainPage),
                                        ('/gettingstarted/parts', PartsHandler),
                                        ('/learninglinux', LearningLinuxHandler),
                                        ('/gettingstarted/assemblingpi', AssemblingPiHandler),
-                                       ('/gettingstarted/stepfour', Step4Handler),
+                                       ('/gettingstarted/pirepheries', PirepheriesHandler),
                                        ('/raspberrypi', RaspberryPiHandler)],
                                        debug=True)
