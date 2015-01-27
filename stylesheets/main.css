@@ -26,13 +26,18 @@ header {
 
 header h1 {
     display: block;
-    margin: 30px;
+    margin: 40px;
     text-align: center;
+ }
+
+header h1 a {
+    text-decoration: none;
+    color: white;
  }
 
 header nav ul {
     list-style: none;
-    margin: 51px;
+    margin: 30px;
 }
 
 header nav li {
@@ -52,7 +57,7 @@ header nav li a {
     text-decoration: none;
     font-family: Calibri, sans-serif;
     color: white;
-    font-size: 19px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -87,10 +92,7 @@ div.mainpage {
 p {
     font-family: Calibri, sans-serif;
     display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 50;
-    margin-right: 50;
+    margin: 0 50px 0;
 }
 
 h4 {
@@ -106,6 +108,8 @@ h3 {
     margin-right: 0;
 }
 
+#correct {color: green;}
+
 ul {
     display: block;
     margin-top: 1em;
@@ -114,6 +118,7 @@ ul {
     margin-right: 50;
 }
 
+    
 div.image img {
     margin: 0 150px 0;
     width: 630px;
@@ -134,3 +139,58 @@ ol {
     margin-right: 1em;
     line-height: 2em;
 }
+
+iframe {margin: 30px 70px;}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 900px;
+    margin:0 50px 0;
+}
+
+div.error {
+    color: red;
+    margin: 0 90px 0;
+    font-family: Calibri, sans-serif;
+    font-size: 21px
+ }
+    
+input { 
+    font-family: Calibri, sans-serif;
+    font-size: 19px;
+    margin: 10 30px 0;
+ }
+
+#error {
+    margin: 0 90px 0;
+    padding: 3px 7px;
+ }
+
+ul.spacing li {
+    margin: 20px 0;
+ }
+
+mark {background: #ff7d5c}
+
+span {
+    background: #161616;
+    padding: 0 7px 0;
+ }
+
+#green {
+    color: #196419;
+ }
+
+#blue {
+    color: #143aa9;
+ }
+
+#white {
+    color: grey;
+ }
+
+#note {
+    background: yellow;
+ }
+    

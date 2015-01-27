@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Lets Boot Up your Raspberry Pi!</h3>
+
+<p>
+ You are almost there! So have got your first Raspberry Pi. You have taken it out of the box and it look
+ great. You have got your case asssembled and all pirepheries are connected and you are keen to turn it
+ on. Well, go right ahead and turn it on by simply pluging it into power socket. 
+ <br>
+ <br>
+ You will see text running up the screen - Yes, Raspberry Pi is alive ! What you see on the screen is
+ <a href="learninglinux/cliinto">CLI</a>. Now you will understand why there was all this talk about Linux
+ and <a href="learninglinux/cliinto">CLI</a> before hand.
+ <br> 
+ <br> 
+ You will see at the bottom of the screen login prompt <span id="white">raspberrypi login:</span> and you
+ will need to login into your Raspberry Pi
+</p>
+
+ <ul>
+     <li> <span id="white">user: pi</span></li>
+     <li> <span id="white">password: raspberry</span></li>
+</ul>
+
+<p>
+ <span id="note">Note: when you are going to type in the password there will be nothing appering on the
+  scree. This is Linux feature preventing people looking over your shoulder and at least seeing how long
+  your password is.</span>
+ <br>
+ <br>
+ Once you have logged in you should see command-line prompt like this <span id="green">
+ pi@raspberrypi<span id="blue"> ~ $</span></span>. Your prompt (<span id="green">
+ pi@raspberrypi<span id="blue"> ~ $</span></span>) will stay the same, but everything after
+ <span id="blue"> $</span> will change depending on your actions. You will see as you change directries
+ your prompt will reflect this <b>e.g</b> <span id="green">pi@raspberrypi<span id="blue"> ~ $</span>
+ </span>.
+</p>
+
+<form method="post">
+    <button name="item" value="back2learnlinux">Back</button>
+    <button name="item" value="bootingup">Lets have fun!</button>
+</form>
+
+{% endblock %}

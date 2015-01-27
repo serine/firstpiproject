@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="post">
+    <h4> What is Linux distribution?</h4>
+    <p>
+    <label><input type="radio" name="answer" value="one"> It is a vedio game</label>
+    <br>
+    <label><input type="radio" name="answer" value="two"> 
+    An operation system that is base on Linux kernel
+    </label>
+    <br>
+    <label><input type="radio" name="answer" value="three"> None of the above</label>
+    <br>
+    <br>
+    <div class="error">{{error}}</div>
+    <br>
+    <input id="error" type="submit" value="submit your answer">
+    </p>
+</form>
+
+{% endblock %}

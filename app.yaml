@@ -13,7 +13,7 @@ handlers:
   static_dir: images
 
 - url: /.*
-  script: templates.application
+  script: firstpiproject.application
 
 libraries:
 - name: jinja2

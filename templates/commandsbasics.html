@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Basic Linux commands for CLI</h3>
+
+<p>
+ Here you are going to learn a few basic Linux commands. The great thing about Linux commands, they 
+ are independent of a distribution type. Once you have learned Linux commands, you can transfere those 
+ knowledge to any other Linux computer. 
+ <br>
+ <br>
+ There are alot of different Linux commands, you don't need to know them all, in fact not many people
+ would know all of Linux commands. However as your expirence with 
+ Linux <a href="learninglinux/cliintro">CLI</a> gets bigger so will your knowledge of different Linux
+ commands.
+ <br>
+ <br>
+ <mark>Here is some useful tips on <a href="learninglinux/cliintro">CLI</a> and commands execution:</mark>
+ <ul class="spacing">
+     <li>Always follow this general syntax: <i>command space argument Enter</i>
+         <br>
+         <b>e.g</b> <i>ls Documents/</i> This will list contents of <i>Documents/</i> directory (folder)
+     </li>
+     <li>Use "Tab Completion" feature. You don't always need to explicitly type
+         out everything, just start typing first couple of letters of a command or an argument
+         and then press "Tab" key and the rest of the command or an argumennt will be autocomplete
+         for you.
+     </li>
+     <li>To kill any commands or other miss behaviour by CLI use ctrl^C (that is press ctrl togehter with C key) </li>
+     <li> Some commands may not need any arguments <b>e.g</b> date, cd or ls commands
+          if you just type <i>ls</i> and press enter it will list content of the
+          current directory 
+     </li>
+
+ </ul>
+
+</p>
+
+<table>
+    <tr>
+        <th>Linux commands</th>
+        <th>Commands description</th>
+        <th>Additional notes</th>
+    </tr>
+    <tr>
+        <td>pwd</td>
+        <td>This means<br> <b>P</b>rint <b>W</b>orking <b>D</b>irectory.</td>
+        <td>Remember that directory and folder are the same thing!
+            <u>pwd</u> commands will show your location in the file system.
+        </td>
+    </tr>
+    <tr>
+        <td>cd</td>
+        <td><b>C</b>hange <b>D</b>irectory.</td>
+        <td>Use this command to move around file system. This is very commonly used command.
+            And remember that directory is the same as folder
+        </td>
+    </tr>
+    <tr>
+        <td>ls</td>
+        <td>This is listing command</td>
+        <td>This command will list contents of the directory (folder) of interest.
+        </td>    
+    </tr>
+    <tr>
+        <td>clear</td>
+        <td>This command will clear the screen of the terminal</td>
+        <td> </td>    
+    </tr>
+    <tr>
+        <td>startx</td>
+        <td>This command will start <a href="/learninglinux/cliintro">GUI</a></td>   
+        <td>You can use this command to start GUI once your Raspberry Pi is up and running</td>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>This command displays day and date information</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cal</td>
+        <td>This command displays calendar for the current month</td>
+        <td>Use different option to get more information <b>e.g</b> cal -m 2 will
+            give you second month of the current year OR cal 2020 will give future calendar
+            for the year 2020
+        </td>
+    </tr>
+    <tr>
+        <td>factor</td>
+        <td>This command will break any given number into its factors</td>
+        <td>This is very cool command that can help you with your mathematics. Use by as such factor 
+            <i>any number</i> enter</td>
+    </tr>
+
+
+</table>
+
+
+<form method="post">
+    <button name="item" value="back2learnlinux">Back</button>
+    <button name="item" value="bootingup">Booting Up your Raspberry Pi</button>
+</form>
+
+
+<!--<h4>Raspberry Pi B+ model specifications:</h4>
+<ul> 
+    <li>4 x USB 2.0 ports</li>
+    <li>1 x Ether port (for internet connectivity)</li>
+    <li>1 x HDMI port for screen connectivity</li>
+    <li>1 x 3.5" audio jack</li>
+    <li>1 x mini USB for your power supply</li>
+    <li>1 x microSD card</li>
+</ul>
+-->
+{% endblock %}

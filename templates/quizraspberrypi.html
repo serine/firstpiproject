@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="post">
+    <h4> What is Raspberry Pi?</h4>
+    <p>
+    <label><input type="radio" name="answer" value="one"> Delicious cupcake</label>
+    <br>
+    <label><input type="radio" name="answer" value="two"> New milk shake from SevenEleven</label>
+    <br>
+    <label><input type="radio" name="answer" value="three"> Mini computer</label>
+    <br>
+    <br>
+    <div class="error">{{error}}</div>
+    <br>
+    <input id="error" type="submit" value="submit your answer">
+    </p>
+</form>
+
+{% endblock %}
