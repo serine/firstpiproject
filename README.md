@@ -12,7 +12,7 @@ Raspberry Pi B+ model at least comes with Minecraft Pi edition installed on it. 
 get interested in setting up Raspberry Pi and on the backhand of that teach him a little bit about Linux, CLI and maybe 
 take it further into programming, maybe with Python. 
 <br>
-All in all this website is gentel step by step introduction to Raspberry Pi setting up and with ample of links to the
+All in all this website is gentele step by step introduction to Raspberry Pi setting up and with ample of links to the
 official Raspberry Pi website as a main source of information. 
 
 The Latest Version
