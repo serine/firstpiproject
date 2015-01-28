@@ -95,6 +95,8 @@ p {
     margin: 0 50px 0;
 }
 
+#prompt {line-height: 30px}
+
 h4 {
     display: block;
     margin: 10px 150px;
@@ -176,6 +178,7 @@ mark {background: #ff7d5c}
 span {
     background: #161616;
     padding: 0 7px 0;
+    font-family: Deja Vu, monospace;
  }
 
 #green {
@@ -192,5 +195,6 @@ span {
 
 #note {
     background: yellow;
+    font-family: Calibri, sans-serif;
  }
     
