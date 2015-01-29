@@ -16,7 +16,6 @@ class Handler(webapp2.RequestHandler):
 
 class MainPage(Handler):
     def get(self):
-        #items = self.request.get_all("food")
         self.render('home.html')
    
     def post(self):
@@ -60,7 +59,6 @@ class GettingStartedHandler(Handler):
         self.render('gettingstarted.html')
   
     def post(self):
-        #self.response.headers['Content-Type'] = 'text/plain'
         item = self.request.get("item")
         if item == "back2raspberry":
             self.redirect('/raspberrypi')
@@ -145,11 +143,7 @@ class SuccessTwoHandler(Handler):
             self.redirect('/learninglinux')
         elif item == 'learningcli':
             self.redirect('/learninglinux/cliintro')
-       
-class BootingUpHandler(Handler):
-    def get(self):
-        self.render('bootingup.html')
-
+   
 class SuccessThreeHandler(Handler):
     def get(self):
         self.render("successthree.html")
@@ -183,6 +177,20 @@ class CommandsBasicsHandler(Handler):
         elif item == "bootingup":
             self.redirect("/bootingup")
 
+class BootingUpHandler(Handler):
+    def get(self):
+        self.render('bootingup.html')
+ 
+    def post(self):
+        item = self.request.get("item")
+        if item == "back2commandsbasics":
+            self.redirect('/commandsbasics')
+        elif item == 'games':
+            self.redirect('/games')
+ 
+class GamesHandler(Handler):
+    def get(self):
+        self.render("/games.html")
 
 application = webapp2.WSGIApplication([('/', MainPage),
                                        ('/gettingstarted', GettingStartedHandler),
@@ -199,5 +207,6 @@ application = webapp2.WSGIApplication([('/', MainPage),
                                        ('/learninglinux/successtwo', SuccessTwoHandler),
                                        ('/learninglinux/cliintro/successthree', SuccessThreeHandler),
                                        ('/commandsbasics', CommandsBasicsHandler),
-                                       ('/bootingup', BootingUpHandler)],
+                                       ('/bootingup', BootingUpHandler),
+                                       ('/games', GamesHandler)],
                                        debug=True)
