@@ -2,15 +2,92 @@
 
 {% block content %}
 
-<h3>Lets have some fun playing some python games on your Raspberry Pi!</h3>
+<h3>Lets have some fun!</h3>
 
 <p>
- This is it. You are at the end of you Raspberry Pi project. However this is really just the 
- beginning of some much bigger. There are lots of different applicaiton for your ras
+ Well done, you have made a terrific effort by taking up this challenge! I am going to show some python
+ games and of cource we are going to launch Minecraft Pi edition shortly.
+</p>
+
+<p id="prompt">
+ Once you have logged in you should see command-line prompt like this <span id="green">
+ pi@raspberrypi<span id="blue"> ~ $</span></span>. Go ahead and change into
+ <span id="white">python_games/</span> directory by typing <span id="white">cd python_games/</span> and
+ press enter, your promopt will now look like this
+ <span id="green">pi@raspberrypi<span id="blue"> ~ /python_games $ </span></span> this means you are
+ in the <span id="white">python_games/</span> directory. 
+ <br>
+ <br>
+ To see the contents of <span id="white">python_games/</span> directory you can type <span id=white>ls
+ </span> and press enter. There will be alot of different files and you might get a bit worried since you
+ wouldn't understand it all. Don't worry! All you need to know at this stage, any files that end with 
+ <span id="white">.py</span> extension, will be your games of interest. For example to start
+ <i>Tetromino</i>, which is a python version of
+ <a href="http://www.en.wikipedia.org/wiki/Tetris">Tetris</a> type in <span id="white">python tetromino.py
+ </span> and press enter and should see the game appearing on the screen. To leave any game just press
+ Esc key. 
+</p>
+ 
+<h4>Quick introduction to Python programing langugae</h4>
+
+<p>
+ You probably don't think so now by programming can be so much fun. You can make all sorts of different
+ applications with programming. There are alot of different programming languages, just like there are
+ many different <a href="learninglinux">Linux distributions</a>, each programming language is just as
+ valid and powerfull. <a href="http://www.python.org/about/gettingstarted/">Python</a> one of the most
+ intuitive programming languages. Python comes pre-installed with most of Linux disctributions and 
+ sure enough your Raspbian has it. Go ahead and start you python by typing <span id="white">python</span>
+ and pressing enter. You will notice that you usual prompt will change to a different prompt like this
+ one <span id="white">>>></span>. Well done, you are at the python promp, to exit from python press
+ ctrl^D. 
+</p>
+
+<h4>Here is a few quick commands for you python</h4>
+<p>
+ <span id="note">Don't forget quatation marks for any words you are going to type in python and
+ always press enter at the end of any commands, just like you would when you typed in Linux command</span>
+</p> 
+ 
+<ul>
+    <li> <span id="white">>>> print "Hello, <i>yourname</i>!"</span></li>
+    <li> <span id="white">>>> 2+2</span></li> 
+    <li> <span id="white">>>> word = "Hello, <i>yourname</i>!"</span></li>
+    <li> <span id="white">>>> word*5</span></li>
+</ul>
+
+<h4>Minecraft Pi edition</h4>
+
+<p id="prompt">
+ We were launching games straight from the CLI. As we have learned
+ <a href="/learninglinux/cliintro">before</a> you can also use GUI to do exactly the same. To start GUI
+ from CLI type in <span id="white">startx</span> and press enter, you should see GUI coming up on your
+ screen. From now on it is piece of cake, just navigate with your mouse to menu -> games -> python game
+ OR Minecraft Pi edition.
+</p>
+
+<h3>Final say</h3>
+<p>
+ One last things, Linux is truly great family of operating systems. Linux is however, part of
+ a bigger, Unix family. You don't need to know at this stage any of details, just know that all of the
+ commands that you have learned and going to learn are all applicable to all Unix/Linux systems.
+</p>
+
+<h4> Some of the popular examples of Unix/Linux family of operating systems</h4>
+
+<ul>
+    <li> <a href="http://www.en.wikipedia.org/wiki/Android_(operating_system)">Android OS</a>
+         that is used on alot of smart mobile phones
+    </li>
+    <li><a href="http://www.en.wikipedia.org/wiki/OS_X">Mac OS</a>, Apple's operating system
+        that is used on all of the Apples computers
+    </li>
+    <li><a href="http://www.en.wikipedia.org/wiki/IOS">IPhone OS</a>, Apple's operating system
+        that is used on Apple's IPhone products
+    </li>
+</ul>
 
 <form method="post">
-    <button name="item" value="back2gettingstarted">Back</button>
-    <button name="item" value="assemblingpi">Assembling your Raspberry Pi</button>
-    <!--<button name="item" value="two">Booting up your Raspberry Pi</button>-->
+    <button name="item" value="back2bootingup">Back</button>
 </form>
+
 {% endblock %}

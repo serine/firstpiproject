@@ -191,7 +191,11 @@ class BootingUpHandler(Handler):
 class GamesHandler(Handler):
     def get(self):
         self.render("/games.html")
-
+    
+    def post(self):
+        item = self.request.get('item')
+        if item == "back2bootingup":
+            self.redirect('/bootingup')
 application = webapp2.WSGIApplication([('/', MainPage),
                                        ('/gettingstarted', GettingStartedHandler),
                                        ('/gettingstarted/parts', PartsHandler),
